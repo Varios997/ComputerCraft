@@ -25,7 +25,7 @@ end
 
 function mineLine()
 	turtle.dig()
-	while turtle.forward() do
+	while not turtle.forward() do
 		turtle.dig()
 	end
 	turtle.digUp()
