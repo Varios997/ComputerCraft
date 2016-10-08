@@ -16,7 +16,7 @@ function findChest()
 	turtle.turnLeft()
 	turtle.turnLeft()
 	
-	for i=0, travel do
+	for i=1, travel do
 		turtle.forward()
 	end
 	
