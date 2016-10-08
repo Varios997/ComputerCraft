@@ -64,7 +64,6 @@ end
 
 turtle.turnRight()
 mineLine()
-turtle.forward()
 turtle.turnRight()
 
 for i=0, 40 do
