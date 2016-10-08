@@ -1,22 +1,3 @@
-for i=0, 40 do
-	if i%5==0 then
-		checkFuel()
-		placeTorch()
-	end
-	mineLine()
-end
-
-for i=0, 40 do
-	if i%5==0 then
-		checkFuel()
-	end
-	mineLine()
-end
-
-turtle.turnLeft()
-turtle.forward()
-turtle.turnLeft()
-
 function mineLine()
 	turtle.dig()
 	turtle.forward()
@@ -45,3 +26,22 @@ function checkFuel()
 		end
 	end
 end
+
+for i=0, 40 do
+	if i%5==0 then
+		checkFuel()
+		placeTorch()
+	end
+	mineLine()
+end
+
+for i=0, 40 do
+	if i%5==0 then
+		checkFuel()
+	end
+	mineLine()
+end
+
+turtle.turnLeft()
+turtle.forward()
+turtle.turnLeft()
