@@ -35,6 +35,11 @@ for i=0, 40 do
 	mineLine()
 end
 
+turtle.turnRight()
+mineLine()
+turtle.forward()
+turtle.turnRight()
+
 for i=0, 40 do
 	if i%5==0 then
 		checkFuel()
