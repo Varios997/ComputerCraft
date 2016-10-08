@@ -1,3 +1,28 @@
+function findChest()
+	turtle.turnLeft()
+	local success, data = turtle.inspectDown()
+	local travel = 0
+	while not ( (success) and (data.name == "minecraft:chest")) do
+		turtle.forward()
+		success, data = turtle.inspectDown()
+		travel = travel + 1
+	end
+	
+	for i=1, 15 do
+		turtle.select(i)
+		turtle.dropDown()
+	end
+	
+	turtle.turnLeft()
+	turtle.turnLeft()
+	
+	for i=0, travel do
+		turtle.forward()
+	end
+	
+	turtle.turnLeft()
+end
+
 function mineLine()
 	turtle.dig()
 	turtle.forward()
@@ -50,3 +75,5 @@ end
 turtle.turnLeft()
 turtle.forward()
 turtle.turnLeft()
+
+findChest()
